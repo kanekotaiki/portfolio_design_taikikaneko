@@ -1,118 +1,46 @@
 @charset "UTF-8";
 body {
-    background-color: black;
+    background-color: #333333;
+    font-family: 'Quicksand', "Hiragino Kaku Gothic ProN", sans-serif;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
     
     .sp {
         display: none;
     }
+    .menu_toggle {
+        display: none;
+    }
     .navber {
-        background-color: white;
+        background-color: #555555;
         background-color: rgba(0,0,0,0.5);
         position: fixed;
-        /*position: absolute;*/
         top:0%;
         width: 100%;
-        padding: 1.8% 0;
+        padding: 1.4% 0;
     }
     .navber a {
         margin: 0 2%;
         color: white;
         text-decoration: none;
+        font-size: 20px;
     }
     .main{
-        background-image: url("main_img.png");
+        background-image: url("main_img1.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 790px;
     }
     .abouts {
-        width: 40%;
+        width: 80%;
         color: white;
         padding: 7% 0 10% 0;
         margin: 0 auto;
         text-align: center;
     }
-    .abouts a {
-        color: white;
-        text-decoration: none;
+    .abouts img {
+        margin-bottom: 5%;
        
-    }
-    .abouts h3 {
-        margin: 0 0 15% 0;
-    }
-    .abouts p {
-        padding: 3% 0;
-    }
-    .works {
-        color: white;
-        width: 40%;
-        margin: auto;
-        text-align: center;
-    }
-    .works h3 {
-        margin: 0 0 15% 0;
-    }
-    .works img {
-        width: 100%;
-        height: 300px;
-        margin: 5% auto;
-    }
-}
-@media (max-width: 769px) {
-    .pc {
-        display: none;
-    }
-    .menu_toggle {
-        display: none;
-        z-index: 100;
-    }
-     .navber-sp {
-        background-color: white;
-        background-color: rgba(0,0,0,0.5);
-        position: fixed;
-        position: absolute;
-        top:0%;
-        width: 100%;
-        padding: 2% 0;
-        color: white;
-    }
-    .navber-sp span {
-        font-size: 40px;
-        margin: 1%;
-        float: right;
-    }
-    .navber-sp a {
-        margin: 0 2%;
-        color: white;
-        text-decoration: none;
-    }
-    .menu_toggle {
-        position: absolute;
-        top: 10%;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        background-color: white;
-        background-color: rgba(0,0,0,0.1);
-    }
-    .menu_toggle li a{
-        color: black;
-    }
-    .main{
-        background-image: url("main_img.png");
-        background-position: 84% 50%;
-        width: 100%;
-        height: 790px;
-    }
-    .abouts {
-        width: 90%;
-        color: white;
-        padding: 7% 0 10% 0;
-        margin: 0 auto;
-        text-align: center;
     }
     .abouts a {
         color: white;
@@ -124,18 +52,202 @@ body {
     }
     .abouts p {
         padding: 1% 0;
+        
+    }
+    .abouts h4 {
+        padding: 10%;
+    }
+    .rule_body {
+        width: 100%;
+        height: 320px;
+        margin: auto;
+        margin-bottom: 15%;
+        color: black;
+        /*background-color: #111111;*/
+        display: flex;
+    }
+    .rule {
+        width: 30%;
+        margin: 0 0 0 2.5%;
+        color: white;
+    }
+    .rule img {
+        width: 100%;
+        padding-top: 5%;
+    }
+    .works {
+        color: white;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+    .works h3 {
+        margin: 0 0 10% 0;
+    }
+ 
+    .works_body {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+         width: 100%;
+    }
+    .works_box {
+        width: 30%;
+        margin: 0 0 0 2.8%;
+        padding: 5% 0;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+    .works img {
+        width: 100%;
+        height: 70%;
+        margin: 0 auto 5% auto;
+    }
+    .works_body span {
+        border: solid #ddd;
+        border-radius: 3px;
+        background-color: #ccc;
+        padding: 1%;
+        color: #333;
+        margin: 0 1% 0 0;
+        font-size: 10px;
+    }
+    .fotter {
+        background-color: rgba(0,0,0,0.5);
+        margin: 0;
+        text-align: center;
+    }
+    .fotter p {
+        padding: 1%;
+         margin: 0;
+        color: white;
+    }
+}
+@media (max-width: 767px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        background-color: #222222;
+    }
+     .sp p {
+        color: white;
+        font-size: 18px;
+        display: inline-block;
+        z-index: 100;
+        margin: 6% 0 0 5%;
+        padding-bottom: 4%;  
+    }
+
+    .sp span {
+        position: absolute;
+        right: 5%;
+        font-size: 40px;
+        margin-top: 2%;
+        float: right;
+        color: white;
+    }
+    .sp a {
+        margin: 0 2%;
+        color: white;
+        text-decoration: none;
+    }
+    .menu_toggle {
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        background-color: #222222;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 100;
+        position: absolute;
+    }
+    .menu_toggle li {
+         margin: 3% 0;
+    }
+    .menu_toggle li a{
+        color: white;
+       
+    }
+   
+    .main{
+        background-image: url("main_img1.jpeg");
+        background-position: 37% 50%;
+        width: 100%;
+        height: 790px;
+    }
+    .abouts {
+        width: 90%;
+        color: white;
+        padding: 7% 0 10% 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .abouts a {
+        color: white;
+        text-decoration: none;
+       
+    }
+    .abouts img {
+         width: 90%;
+    }
+    .abouts h3 {
+        margin: 0 0 15% 0;
+    }
+    .abouts h4 {
+        padding: 10%;
+    }
+    .rule {
+        margin: 5% 0;
+    }
+    .rule img {
+        width: 95%;
+    }
+    .rule p {
+        width: 95%;
+        margin: auto;
+    }
+    .abouts p {
+        padding: 1% 0;
     }
     .works {
         color: white;
         width: 90%;
         margin:auto;
+        margin-bottom: 20%;
         text-align: center;
     }
     .works h3 {
         margin: 0 0 15% 0;
     }
+    .works_box {
+        margin: 3%;
+        padding: 5% 2%;
+    }
     .works img {
         width: 80%;
-        margin: 0 auto 10% auto;
+        margin: 0 auto;
+    }
+    .works_body span {
+        border: solid #ddd;
+        border-radius: 3px;
+        background-color: #ccc;
+        padding: 1%;
+        color: #333;
+        margin: 0 1% 0 0;
+        font-size: 10px;
+    }
+    .fotter {
+        background-color: rgba(0,0,0,0.5);
+        margin: 0;
+        text-align: center;
+    }
+    .fotter p {
+        padding: 1%;
+         margin: 0;
+        color: white;
     }
 }
